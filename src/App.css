@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+*   {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: var(--color-bg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+    color: unset;
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.gradient__bg {
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(181deg, rgba(18, 69, 125, 1) 15%, rgba(4, 12, 24, 1) 86%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(181deg, rgba(18, 69, 125, 1) 15%, rgba(4, 12, 24, 1) 86%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(181deg, rgba(18, 69, 125, 1) 15%, rgba(4, 12, 24, 1) 86%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#040C18', endColorstr='#12457D', GradientType=1 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(181deg, rgba(18, 69, 125, 1) 15%, rgba(4, 12, 24, 1) 86%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(181deg, rgba(18, 69, 125, 1) 15%, rgba(4, 12, 24, 1) 86%);
+
+}
+         
+.homepage__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0 2rem 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.homepage__top > * {
+    margin: 1rem 0 1rem 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gradient__text {
+    background-color: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.section__padding {
+    padding: 4rem 6rem;
+}
+
+.section__margins {
+    margin: 4rem 6rem;
+}
+
+
+/* support for tablets */
+@media screen and (max-width: 700px) {
+    .section__padding {
+        padding: 4rem;
+    }
+
+    .section__margins {
+        margin: 4rem;
+    }
+}
+
+
+/* support for phones */
+@media screen and (max-width: 700px) {
+    .section__padding {
+        padding: 4rem 2rem;
+    }
+
+    .section__margins {
+        margin: 4rem 2rem;
+    }
+}
+

@@ -1,0 +1,13 @@
+.profPic {
+    width: 200px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}

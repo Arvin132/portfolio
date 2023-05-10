@@ -1,0 +1,31 @@
+.article__text {
+    font-family: var(--font-family);
+    font-size: large;
+    background-clip: text;
+    background-color: var(--color-text);
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+.article__container {
+    padding: 2rem 4rem;
+    background-color: var(--color-bg);
+    border-radius: 2rem 0 0 2rem;
+    overflow: hidden;
+    text-overflow: clip;
+    /* animation-delay: 2s;
+    animation-duration: 3s;
+    animation-name: slidein; */
+    max-width: 60%;
+}
