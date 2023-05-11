@@ -1,0 +1,38 @@
+.feature__container {
+
+    padding: 1rem;
+    font-size: large;
+    border-radius: 5px;
+
+    
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(ellipse at 100% 0%, rgba(28, 113, 250, 1) 0%, rgba(1, 38, 76, 1) 50%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(ellipse at 100% 0%, rgba(28, 113, 250, 1) 0%, rgba(1, 38, 76, 1) 50%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(ellipse at 100% 0%, rgba(28, 113, 250, 1) 0%, rgba(1, 38, 76, 1) 50%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(ellipse at 100% 0%, rgba(28, 113, 250, 1) 0%, rgba(1, 38, 76, 1) 50%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(ellipse at 100% 0%, rgba(28, 113, 250, 1) 0%, rgba(1, 38, 76, 1) 50%);
+}
+
+.feature__header_1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    
+}
+
+.feature__text {
+    font-family: var(--font-family);
+    font-size: large;
+    background-clip: text;
+    background-color: var(--color-text);
+    -webkit-text-fill-color: transparent;
+}
+
