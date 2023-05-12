@@ -1,10 +1,7 @@
 .feature__container {
 
     padding: 1rem;
-    font-size: large;
     border-radius: 5px;
-
-    
 
     /* ff 3.6+ */
     background:-moz-radial-gradient(ellipse at 100% 0%, rgba(28, 113, 250, 1) 0%, rgba(1, 38, 76, 1) 50%);
@@ -23,9 +20,18 @@
 }
 
 .feature__header_1 {
-    font-size: 2rem;
+    font-size: 30px;
     text-transform: capitalize;
-    
+    background-clip: text;
+    background-color: white;
+    -webkit-text-fill-color: transparent;
+}
+
+.feature__header_2 {
+    font-size: 25px;
+    background-clip: text;
+    background-color: white;
+    -webkit-text-fill-color: transparent;
 }
 
 .feature__text {
@@ -34,5 +40,13 @@
     background-clip: text;
     background-color: var(--color-text);
     -webkit-text-fill-color: transparent;
+}
+
+.feature__bar {
+    width: 100px;
+    height: 3px;
+    background: var(--gradient-text);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.25rem;
 }
 
