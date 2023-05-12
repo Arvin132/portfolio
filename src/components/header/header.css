@@ -55,7 +55,7 @@
     }
     100% {
         opacity: 1;
-        transition-timing-function: sca le(1);
+        transition-timing-function: scale(1);
     }
 }
 

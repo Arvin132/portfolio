@@ -7,6 +7,7 @@
 
 body {
     background-color: var(--color-bg);
+    overflow-x: hidden;
 }
 
 a {
@@ -16,22 +17,22 @@ a {
 
 .gradient__bg {
     /* ff 3.6+ */
-    background:-moz-linear-gradient(181deg, rgba(18, 69, 125, 1) 15%, rgba(4, 12, 24, 1) 86%); 
+    background:-moz-linear-gradient(181deg, rgba(18, 69, 125, 1) 5%, rgba(4, 12, 24, 1) 100%); 
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-linear-gradient(181deg, rgba(18, 69, 125, 1) 15%, rgba(4, 12, 24, 1) 86%);
+    background:-webkit-linear-gradient(181deg, rgba(18, 69, 125, 1) 5%, rgba(4, 12, 24, 1) 100%);
 
     /* opera 11.10+ */
-    background:-o-linear-gradient(181deg, rgba(18, 69, 125, 1) 15%, rgba(4, 12, 24, 1) 86%);
+    background:-o-linear-gradient(181deg, rgba(18, 69, 125, 1) 5%, rgba(4, 12, 24, 1) 100%);
 
     /* ie 6-9 */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#040C18', endColorstr='#12457D', GradientType=1 );
 
     /* ie 10+ */
-    background:-ms-linear-gradient(181deg, rgba(18, 69, 125, 1) 15%, rgba(4, 12, 24, 1) 86%);
+    background:-ms-linear-gradient(181deg, rgba(18, 69, 125, 1) 5%, rgba(4, 12, 24, 1) 100%);
 
     /* global 94%+ browsers support */
-    background:linear-gradient(181deg, rgba(18, 69, 125, 1) 15%, rgba(4, 12, 24, 1) 86%);
+    background:linear-gradient(181deg, rgba(18, 69, 125, 1) 5%, rgba(4, 12, 24, 1) 100%);
 
 }
          

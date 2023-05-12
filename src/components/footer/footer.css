@@ -1,0 +1,84 @@
+.footer__container {
+    background:-moz-radial-gradient(ellipse at 49% 45%, rgba(3, 27, 52, 1) 0%, rgba(4, 12, 24, 1) 53%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(ellipse at 49% 45%, rgba(3, 27, 52, 1) 0%, rgba(4, 12, 24, 1) 53%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(ellipse at 49% 45%, rgba(3, 27, 52, 1) 0%, rgba(4, 12, 24, 1) 53%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(ellipse at 49% 45%, rgba(3, 27, 52, 1) 0%, rgba(4, 12, 24, 1) 53%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(ellipse at 49% 45%, rgba(3, 27, 52, 1) 0%, rgba(4, 12, 24, 1) 53%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    animation: fadein2 5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@keyframes fadein2 {
+    0% {
+        opacity: 0;
+        transition-timing-function: scale(1);
+        transform: translateY(100%);
+    }
+    50% {
+        opacity: 0;
+        transition-timing-function: scale(1);
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transition-timing-function: scale(1);
+        transform: translateY(0%);
+    }
+}
+
+
+.footer__container > * {
+    margin: 1rem;
+}
+
+.footer__email__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer__text {
+    font-family: var(--font-family);
+    font-size: large;
+    background-clip: text;
+    background-color: var(--color-text);
+    -webkit-text-fill-color: transparent;
+}
+.footer__copied__text {
+    background-color: var(--color-bg);
+    padding: 5px 10px;
+    border: none;
+    text-align: center;
+    display: none;
+    text-decoration: none;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: transform;
+}
+
+.footer__email__container:hover .footer__copied__text {
+    display: block;
+    transform: translateY(-25px);
+}
+
+.footer__email__container:hover .footer__email__text {
+    transform: translateY(-30px);
+}
+
+.footer__email__text {
+    transition: transform;
+}
