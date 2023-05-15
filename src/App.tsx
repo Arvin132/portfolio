@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { initializeApp } from "firebase/app";
 import { Homepage } from './containers';
+
 import './App.css';
 
 function App(props: any) {
@@ -38,5 +39,4 @@ function App(props: any) {
         </div>
     );
 }
-
 export default App;
