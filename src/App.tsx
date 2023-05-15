@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { initializeApp } from "firebase/app";
-import { ProfilePic, Article, Feature, Navbar, Header, Footer } from "./components";
+import { Homepage } from './containers';
 import './App.css';
 
 function App(props: any) {
@@ -20,41 +20,23 @@ function App(props: any) {
     return (
         <div>
             <BrowserRouter>
+                
                 <Routes>
-                    <Route path='/' Component={HomePage}>
+                    <Route path='/' Component={Homepage}>
                     </Route>
-                    <Route path='/home' Component={HomePage}>
+                    <Route path='/home' Component={Homepage}>
                     </Route>
-                    <Route path="/blog">
+                    <Route path="/blogs">
                         This is the blog page
                     </Route>
-                    <Route path="/contact">
-                        contact webpage
+                    <Route path="/cl">
+                        Cover Letter
                     </Route>
                 </Routes>
+            
             </BrowserRouter>
         </div>
     );
-}
-
-function HomePage() {
-
-
-    return (
-        <React.Fragment>
-            <Header />
-            <div className="section__margin gradient__bg homepage__top">
-                <ProfilePic />
-                <Article />
-            </div>
-            <div className="section__padding section__margin">
-                <Feature />
-            </div>
-            <div className="section__padding section__margin">
-                <Footer />
-            </div>
-        </React.Fragment>
-    )
 }
 
 export default App;
