@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { initializeApp } from "firebase/app";
-import { Homepage } from './containers';
+import { Homepage, Blogpage } from './containers';
 
 import './App.css';
 
@@ -27,8 +27,10 @@ function App(props: any) {
                     </Route>
                     <Route path='/home' Component={Homepage}>
                     </Route>
-                    <Route path="/blogs">
-                        This is the blog page
+                    <Route path="/blogs"> 
+                         this is the blogs search page 
+                    </Route>
+                    <Route path="/blogs/:id" Component={Blogpage}> 
                     </Route>
                     <Route path="/cl">
                         Cover Letter
