@@ -1,0 +1,14 @@
+.homepage__top {
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    padding: 2rem 0 2rem 2rem;
+}
+
+.homepage__top > * {
+    margin: 1rem 0 1rem 1rem;
+}
+
+.h__spacer {
+    flex-grow: 1;
+}

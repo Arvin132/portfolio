@@ -1,4 +1,5 @@
 import React from "react";
+import "./homepage.css"
 
 import { ProfilePic, Article, Feature, Header, Footer, Stats } from "../../components";
 function HomePage() {
@@ -9,7 +10,8 @@ function HomePage() {
             <Header />
             <div className="section__margin gradient__bg homepage__top">
                 <ProfilePic />
-                <Stats></Stats>
+                <Stats />
+                <div className="h__spacer"></div>
                 <Article />
             </div>
             <div className="section__padding section__margin">

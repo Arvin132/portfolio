@@ -24,8 +24,6 @@
     border-radius: 2rem 0 0 2rem;
     overflow: hidden;
     text-overflow: clip;
-    /* animation-delay: 2s;
-    animation-duration: 3s;
-    animation-name: slidein; */
     max-width: 60%;
+    
 }

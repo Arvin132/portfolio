@@ -35,18 +35,6 @@ a {
     background:linear-gradient(181deg, rgba(18, 69, 125, 1) 5%, rgba(4, 12, 24, 1) 100%);
 
 }
-         
-.homepage__top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center ;
-    padding: 2rem 0 2rem 2rem;
-}
-
-.homepage__top > * {
-    margin: 1rem 0 1rem 1rem;
-}
 
 .gradient__text {
     background-color: var(--gradient-text);
