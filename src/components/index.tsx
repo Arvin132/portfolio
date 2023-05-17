@@ -6,3 +6,4 @@ export { default as Header } from "./header/Header";
 export { default as Footer } from "./footer/Footer";
 export { default as Stats } from "./stats/Stats";
 export { default as BlogArticle } from "./blogArticle/BlogArticle";
+export { default as BlogElement } from "./blogElement/BlogElement";

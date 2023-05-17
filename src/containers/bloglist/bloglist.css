@@ -1,0 +1,18 @@
+
+
+.bloglist__container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bloglist__elements_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.v_spacer {
+    flex-grow: 1;
+}

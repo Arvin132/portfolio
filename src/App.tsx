@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import { Homepage, Blogpage } from './containers';
+import { Homepage, Blogpage, BlogList } from './containers';
 
 import './App.css';
 
@@ -15,8 +15,7 @@ function App(props: any) {
                     </Route>
                     <Route path='/home' Component={Homepage}>
                     </Route>
-                    <Route path="/blogs"> 
-                         this is the blogs search page 
+                    <Route path="/blogs" Component={BlogList}> 
                     </Route>
                     <Route path="/blogs/:id" Component={Blogpage}> 
                     </Route>
