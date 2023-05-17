@@ -1,0 +1,25 @@
+.blogelement__container {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-blog);
+    border-radius: 10px;
+    width: 80%;
+}
+
+.blogelement__header {
+    font-family: var(--font-family);
+    font-size: x-large;
+    background-clip: text;
+    background-color: var(--color-header);
+    -webkit-text-fill-color: transparent;
+}
+
+.blogelement__text {
+    font-family: var(--font-family);
+    font-size: medium;
+    background-clip: text;
+    background-color: var(--color-text);
+    -webkit-text-fill-color: transparent;
+}
