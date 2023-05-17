@@ -1,16 +1,13 @@
-import React, { useState } from "react";
-import { useLocation, useNavigate, NavLink } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { GoPencil } from "react-icons/go"
 import { FaScroll } from "react-icons/fa"
-import {IconContext} from "react-icons"
+import { IconContext } from "react-icons"
 import "react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css";
 import "./navbar.css";
 
 const Navbar = () => {
-    const navigation = useNavigate();
-    const location = useLocation();
-    const [isSidebarOpen, setIsSideBarOpen] = useState(true);
     const navbarElements = [
         {
             title: "Home",
