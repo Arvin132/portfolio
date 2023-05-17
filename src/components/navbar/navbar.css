@@ -32,3 +32,8 @@
     transform: scale(1.2);
 }
 
+@media only screen and (max-width: 763px) {
+    .navbar__link {
+        margin: 0 0.5rem;
+    }
+}
