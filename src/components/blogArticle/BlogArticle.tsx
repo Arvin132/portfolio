@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./blogArticle.css";
 
-
-
 enum TextType {
     HEADER = 1,
     SECTION,

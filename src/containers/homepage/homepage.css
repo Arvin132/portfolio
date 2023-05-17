@@ -1,14 +1,29 @@
 .homepage__top {
-    display: flex;
+    display:flex;
     flex-direction: row;
     align-items: center ;
     padding: 2rem 0 2rem 2rem;
+}
+
+.homepage__profolio__container {
+    display: flex;
 }
 
 .homepage__top > * {
     margin: 1rem 0 1rem 1rem;
 }
 
-.h__spacer {
-    flex-grow: 1;
+.homepage__article_container {
+    display: flex;
+    max-width: 60%;
+}
+@media only screen and (max-width: 763px) {
+    .homepage__top {
+        flex-direction: column;
+    }
+
+    .homepage__article_container {
+        max-width: 75%;
+    }
+
 }
