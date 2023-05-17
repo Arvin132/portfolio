@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { initializeApp } from "firebase/app";
+import { getFirestore, doc, getDoc } from "firebase/firestore";
 import "./blogArticle.css";
 
 enum TextType {
@@ -45,29 +47,60 @@ type BlogParam = {
 
 const BlogArticle = ({id} : BlogParam) => {
     const [content, setContent] = useState<JSX.Element[]>([])
+    const [blog, setBlog] = useState<Blog>()
+    useEffect(()  =>  {
+        const getData = async () => {
+            const firebaseConfig = {
+                apiKey: "AIzaSyCd5bGsyxu7O6P4Ozvg6NCN-5TiCCzMi6g",
+                authDomain: "arvin-profolio.firebaseapp.com",
+                projectId: "arvin-profolio",
+                storageBucket: "arvin-profolio.appspot.com",
+                messagingSenderId: "1058179649227",
+                appId: "1:1058179649227:web:0a3c622aa579a7ffa3554e",
+                measurementId: "G-MBTB40WWD9"
+            };
+            const docRef = doc(getFirestore(initializeApp(firebaseConfig)), "blogs", `${id}`);
 
-    const blog: Blog = {
-        headerLabel : "The Majestic Wonders of Trees",
-        imgUrl: "https://media.architecturaldigest.com/photos/6081919db41653acb3f3a17b/16:9/w_2560%2Cc_limit/matt-artz-nTRDnDdDYk8-unsplash.jpg",
-        mainContent: [
-            {type: TextType.SECTION, value: "Trees, the towering giants of the natural world, have fascinated and captivated humans for centuries. As essential components of our ecosystem, they provide numerous benefits, ranging from environmental to socio-economic. In this essay, we will explore the remarkable qualities and significance of trees, highlighting their role in supporting life, preserving biodiversity, combating climate change, and enhancing our well-being."},
-            {type: TextType.HEADER, value: "Life Sustainers"},
-            {type: TextType.SECTION, value: "Trees are vital for the existence of life on Earth. Through the process of photosynthesis, they convert carbon dioxide into oxygen, releasing clean and breathable air into the atmosphere. Their leaves act as natural filters, purifying the air by trapping pollutants and harmful gases. Without trees, the air we breathe would be contaminated and unfit for human and animal survival."},
-            {type: TextType.IMAGE, value: "https://www.gardeningknowhow.com/wp-content/uploads/2017/07/hardwood-tree.jpg"},
-            {type: TextType.HEADER, value: "Biodiversity Guardians"},
-            {type: TextType.SECTION, value: "Forests, comprised of diverse tree species, harbor an incredible array of flora and fauna. Trees provide habitats and shelter for countless organisms, from birds and mammals to insects and microorganisms. They create intricate ecosystems that support intricate food webs and contribute to the overall balance of nature. Furthermore, forests serve as genetic reservoirs, safeguarding the genetic diversity necessary for species adaptation and evolution."},
-            {type: TextType.IMAGE, value: "https://cdn.britannica.com/50/180050-138-521974A7/tree-limits-height-width-growth-ring-discussion.jpg?w=800&h=450&c=crop"},
-        ]
-    }
+            const querySnapshot = await getDoc(docRef);
+            const data = querySnapshot.data()
 
-    useEffect(() => {
-        setContent(buildText(blog.mainContent))
-    }, [blog.mainContent])
+            let temp: Blog = {
+                headerLabel: data?.headerLabel || "default header",
+                imgUrl: data?.imgUrl || "default image",
+                mainContent: []
+            };
+
+            // create array of text
+            let index = 0
+            while(index < data?.content.length) {
+                let type = data?.content[index]
+                let value = data?.content[index + 1]
+                let text: Text = { type: TextType.HEADER, value: value}
+
+                switch(type) {
+                    case "S": text.type = TextType.SECTION
+                              break
+                    case "H": text.type = TextType.HEADER
+                              break;
+                    case "I": text.type = TextType.IMAGE
+                              break;
+                }
+                index += 2
+                temp.mainContent.push(text)
+            }
+
+            setBlog(temp)
+            setContent(buildText(temp.mainContent))
+        }
+        
+        getData()
+            .catch(console.error);
+    }, [id])
 
     return (
         <div className="blog__article__container">
-            <div className="blog__article__header"> {blog.headerLabel} </div>
-            <div className="blog__article__image"> <img src={blog.imgUrl} alt="main-badurl"/>  </div>
+            <div className="blog__article__header"> {blog?.headerLabel} </div>
+            <div className="blog__article__image"> <img src={blog?.imgUrl} alt="main-badurl"/>  </div>
             <div className="blog__article__main"> {content.map(elem => elem)} </div>
         </div>
     )
