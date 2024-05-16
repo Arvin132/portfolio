@@ -4,7 +4,7 @@ import "./profPic.css";
 const ProfilePic = () => {
     return (
         <div className="profPic">
-            <img src="personalPic.jpg" alt="personal profile"/>
+            <img src="prof-pic.jpg" alt="personal profile"/>
         </div>
     )
 }

@@ -3,7 +3,7 @@
 .bloglist__container {
     display: flex;
     flex-direction: column;
-
+    
 }
 
 .bloglist__elements_container {
@@ -15,4 +15,5 @@
 
 .v_spacer {
     flex-grow: 1;
+
 }

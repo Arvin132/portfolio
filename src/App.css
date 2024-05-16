@@ -51,6 +51,13 @@ a {
     margin: 4rem 6rem;
 }
 
+.v_spacer {
+    flex-grow: 1;
+}
+
+.max__height {
+    height: 100vh;
+}
 
 /* support for tablets */
 @media screen and (max-width: 700px) {

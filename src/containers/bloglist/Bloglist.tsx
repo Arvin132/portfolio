@@ -51,7 +51,7 @@ const BlogList = () => {
     
 
     return (
-        <div className="bloglist__container">
+        <div className="bloglist__container max__height">
             <Header/>
             <div className="bloglist__elements_container">
                 {blogs?.map(elem => <BlogElement key={elem.id} id={elem.id} header={elem.header} desc={elem.desc}/>)}

@@ -1,7 +1,8 @@
 .homepage__top {
     display:flex;
     flex-direction: row;
-    align-items: center ;
+    align-items: center;
+    justify-items: flex-start;
     padding: 2rem 0 2rem 2rem;
 }
 
@@ -17,7 +18,7 @@
     display: flex;
     max-width: 60%;
 }
-@media only screen and (max-width: 763px) {
+@media only screen and (max-width: 900px) {
     .homepage__top {
         flex-direction: column;
     }
@@ -26,4 +27,8 @@
         max-width: 75%;
     }
 
+}
+
+.h__spacer {
+    flex-grow: 1;
 }

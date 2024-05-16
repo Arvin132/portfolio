@@ -7,7 +7,7 @@
 }
 .stats__container > * {
     z-index: 1  ;
-    margin: 0.6rem 0 0.6rem 0;
+    margin: 1rem 0 1rem 0;
     font-family: var(--font-family);
     font-size: large;
     background-clip: text;
