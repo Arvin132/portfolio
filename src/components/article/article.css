@@ -24,9 +24,10 @@
     border-radius: 2rem 0 0 2rem;
     overflow: hidden;
     text-overflow: clip;
+    max-width: 50vw;
 }
 
-@media only screen and (max-width: 763px) {
+@media only screen and (max-width: 900px) {
   .article__container {
     border-radius: 2rem;
     padding: 1rem 2rem;

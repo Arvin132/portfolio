@@ -27,7 +27,6 @@ const Footer = () => {
             <IconContext.Provider value={{color: "white", size: "2em"}}>
                 <a href="https://github.com/Arvin132"><AiFillGithub/></a>
                 <a href="https://www.linkedin.com/in/arvinasghari/"><AiFillLinkedin className="footer__text"/></a>
-                <a href="https://stackoverflow.com/users/19765903/arvin-asgharian"><BsStackOverflow className="footer__text"/></a>
             </IconContext.Provider>
         </div>
     )

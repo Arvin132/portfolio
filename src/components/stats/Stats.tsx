@@ -6,7 +6,7 @@ import {IconContext} from 'react-icons';
 import { MdWork } from 'react-icons/md';
 
 function Stats() {
-    const workString = 'Activley looking for work';
+    const workString = 'looking for F24 internship';
     const locationString = 'Ontario/Canada';
     const education = 'UWaterloo CS 2025' 
     return(

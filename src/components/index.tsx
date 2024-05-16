@@ -3,7 +3,7 @@ export { default as Feature } from './feature/Feature';
 export { default as Navbar } from './navbar/Navbar';
 export { default as ProfilePic } from './profPic/ProfPic';
 export { default as Header } from "./header/Header";
-export { default as Footer } from "./footer/Footer";
+export { default as Footer } from "./feature/footer/Footer";
 export { default as Stats } from "./stats/Stats";
 export { default as BlogArticle } from "./blogArticle/BlogArticle";
 export { default as BlogElement } from "./blogElement/BlogElement";
