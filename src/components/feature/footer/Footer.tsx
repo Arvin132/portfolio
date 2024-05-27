@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./footer.css";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { BsStackOverflow } from "react-icons/bs";
 import { IconContext } from "react-icons";
 import clipboardy from 'clipboardy';
 

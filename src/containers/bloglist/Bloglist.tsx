@@ -1,6 +1,6 @@
 import React, {useEffect, useState } from "react";
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDoc, getDocs } from "firebase/firestore";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
 import { Header, Footer, BlogElement } from "../../components";
 import "./bloglist.css";
 
@@ -18,6 +18,9 @@ const BlogList = () => {
         
         const getData = async () => {
             const temp: BlogElementData[] = []
+            await fetch("firedata.json") 
+                .then((response) => {})
+                .then((data) => console.log(data))
             const firebaseConfig = {
                 apiKey: "AIzaSyCd5bGsyxu7O6P4Ozvg6NCN-5TiCCzMi6g",
                 authDomain: "arvin-profolio.firebaseapp.com",
@@ -41,7 +44,6 @@ const BlogList = () => {
             });
 
             setBlogs(temp)
-            console.log(temp)
         }
 
         getData()

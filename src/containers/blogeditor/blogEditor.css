@@ -1,0 +1,42 @@
+
+.blog__editor__container {
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.blog__editor {
+    background-color: var(--color-bg-second);
+    display: flex;
+    max-width: 60%;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: var(--color-subtext);
+    font-size: xx-Large;
+}
+
+.login__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__container > * {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: large;
+    color: var(--color-subtext);
+}
+
+.login__button {
+    background-color: var(--color-bg-second);
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    color: var(--color-text);
+    border: 2px solid var(--color-text);
+}
