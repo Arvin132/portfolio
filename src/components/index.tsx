@@ -7,3 +7,4 @@ export { default as Footer } from "./feature/footer/Footer";
 export { default as Stats } from "./stats/Stats";
 export { default as BlogArticle } from "./blogArticle/BlogArticle";
 export { default as BlogElement } from "./blogElement/BlogElement";
+export { default as ProjectItem } from "./projectItem/ProjectItem";

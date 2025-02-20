@@ -1,0 +1,35 @@
+
+
+
+.project__item__header {
+    font-family: var(--font-family); /* Use the custom font */
+    font-size: 1.8rem; /* Make the header bigger */
+    color: var(--color-header); /* White color for the header */
+    font-weight: bold;
+    margin-bottom: 15px;
+    background: var(--gradient-bar); /* Gradient background for the header */
+    -webkit-background-clip: text; /* Make the text itself have a gradient color */
+    color: transparent; /* The text color becomes transparent to show gradient */
+}
+
+.project__item {
+    background-color: var(--color-bg-second); /* Darker background for each project */
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1800px;
+    overflow: hidden;
+}
+
+.project__item__content {
+    font-family: var(--font-family); /* Use the custom font */
+    font-size: 1.1rem;
+    color: var(--color-text); /* Use the lighter text color */
+    line-height: 1.6; /* Add some line spacing for readability */
+}
+
+.project__item__content p {
+    margin-bottom: 10px;
+}
