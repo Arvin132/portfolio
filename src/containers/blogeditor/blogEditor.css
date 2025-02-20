@@ -1,6 +1,7 @@
 
 .blog__editor__container {
     display: flex;
+    flex-direction:column;
     margin: 2rem;
     justify-content: center;
     align-items: center;
@@ -17,6 +18,16 @@
     padding: 1rem;
     color: var(--color-subtext);
     font-size: xx-Large;
+}
+
+.blog__editor__add__button_conatiner {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    background-color: var(--color-bg-second);
+    padding: 1rem;
+    color: var(--color-subtext);
+    font-size: Large;
 }
 
 .login__container {

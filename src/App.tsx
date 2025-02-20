@@ -9,7 +9,6 @@ function App(props: any) {
     return (
         <div>
             <BrowserRouter>
-                
                 <Routes>
                     <Route path='/' Component={Homepage}>
                     </Route>

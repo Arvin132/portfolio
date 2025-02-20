@@ -51,6 +51,10 @@ a {
     margin: 4rem 6rem;
 }
 
+.h__spacer {
+    flex-grow: 1;
+}
+
 .v_spacer {
     flex-grow: 1;
 }
