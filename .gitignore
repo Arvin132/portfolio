@@ -10,6 +10,7 @@
 
 # production
 /build
+/public/firedata.json
 
 # misc
 .DS_Store
